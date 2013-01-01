@@ -1,0 +1,18 @@
+[include]
+  # include local environment dependency settings.
+  path = ~/.gitconfig.local
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = ~/.gitignore_global
+  editor = vim
+  pager = lv -c
+[alias]
+  br = branch
+  co = checkout
+  ci = commit
+  st = status
+  df = diff
+  lg = log
+[color]
+  ui = auto
