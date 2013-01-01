@@ -19,10 +19,10 @@ First, add newfiles to your git repository and push these.
 
     cp ~/.newfile ~/prj/dotfiles/; cd ~/prj/dotfiles/
     git add .newfile
-    git commt -m Add
+    git commit -m Add
     git push origin master
 
-Next, run `home sick pull dotfiles` to sync to your Mac.
+Next, run `homesick pull dotfiles` to sync to your Mac.
 
     homesick pull dotfiles
 
