@@ -1,5 +1,8 @@
 dotfiles
 ===
+## before install
+install Vundle https://github.com/gmarik/vundle
+
 ## How to install
 
 Install homesick and register me
