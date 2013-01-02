@@ -15,7 +15,11 @@ if [ -x "`which colordiff`" ]; then
   alias diff=colordiff
 fi
 
-source ~/.git-completion.bash
+if [ -d '~/.bash_completion.d' ]; then
+  for file in ~/.bash_completion.d/*bash ; do
+    source $file
+  done
+fi
 
 PATH=$PATH:$HOME/src/git-prune-remote-branch
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
