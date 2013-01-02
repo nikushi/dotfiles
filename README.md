@@ -3,6 +3,10 @@ dotfiles
 ## before install
 install Vundle https://github.com/gmarik/vundle
 
+mkdir autoload directory for vim
+
+    mkdir -p ~/.vim/autoload
+
 ## How to install
 
 Install homesick and register me
