@@ -3,6 +3,8 @@ alias ll='ls -FGAlh'
 alias la='ls -aG'
 alias lv='lv -Ou8'
 
+alias iijping='ping 202.232.0.1'
+
 if [ -x '/usr/local/Cellar/ctags/5.8/bin/ctags' ]; then
   alias ctags='/usr/local/Cellar/ctags/5.8/bin/ctags'
 fi
