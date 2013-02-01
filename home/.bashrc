@@ -13,7 +13,7 @@ if [ -x '/usr/local/Cellar/gnu-sed/4.2.1/bin/gsed' ]; then
   alias sed='/usr/local/Cellar/gnu-sed/4.2.1/bin/gsed'
 fi
 
-if [ -x "`which colordiff`" ]; then
+if [ -x "`which colordiff 2>/dev/null`" ]; then
   alias diff=colordiff
 fi
 
