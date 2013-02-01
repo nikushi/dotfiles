@@ -16,3 +16,5 @@
   lg = log
 [color]
   ui = auto
+[http]
+  sslVerify = false
