@@ -2,6 +2,7 @@ alias ls='ls -FG'
 alias ll='ls -FGAlh'
 alias la='ls -aG'
 alias lv='lv -Ou8'
+alias be='bundle exec'
 
 alias iijping='ping 202.232.0.1'
 
