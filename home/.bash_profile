@@ -7,7 +7,7 @@ export HISTSIZE=100000
 export PATH=$PATH:~/bin:/usr/local/sbin
 
 # change prompt's color
-export PS1='\[\033[01;32m\]\h\[\033[01;34m\] \w \$ \[\033[00m\]'
+export PS1='\[\033[0;36m\]\h\[\033[1;33m\] \w \[\033[0;37m\]\$ \[\033[00m\]'
 
 if [ -f ~/.bash_profile.local ]; then
     source ~/.bash_profile.local
