@@ -51,6 +51,10 @@ set splitright
 inoremap <C-d> $
 inoremap <C-a> @
 
+" psgiなどの拡張子をファイルタイプに紐付ける
+autocmd BufNewFile,BufRead *.psgi   set filetype=perl
+autocmd BufNewFile,BufRead *.t      set filetype=perl
+autocmd BufNewFile,BufRead *.ru      set filetype=ruby
 " ファイルタイプに応じた設定
 autocmd FileType perl set shiftwidth=4 tabstop=4 expandtab 
 autocmd FileType cgi  set shiftwidth=4 tabstop=4 expandtab 
