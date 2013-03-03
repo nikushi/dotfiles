@@ -4,6 +4,11 @@
 "   ^w + >                ウインドウを右方向にリサイズ
 "   ^w + <                ウインドウを左方向にリサイズ
 "
+" スクロール
+"   ^f, ^b                1画面スクロール
+"   ^u, ^d                画面半分スクロール
+"   ^e, ^y                1行スクロール
+"
 " 複数行コメントアウト
 "   ^v + jk範囲選択, I, #, Esc
 "
@@ -11,7 +16,7 @@
 "   shift + k             モジュール名にカーソルを合わせた状態で
 "
 " ショートカット
-"   ^d => $, ^a => @      $,@を打ちやすく
+"   ^d => $, ^a => @, ^e => =      $,@,=を打ちやすく
 "
 " Quickrun 
 "   \ + r                 Run quickrun on the new window
@@ -47,9 +52,10 @@ set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%0
 set splitbelow
 set splitright
 
-" ^d => $, ^a => @
+" ^d => $, ^a => @, ^e => =
 inoremap <C-d> $
 inoremap <C-a> @
+inoremap <C-e> =
 
 " psgiなどの拡張子をファイルタイプに紐付ける
 autocmd BufNewFile,BufRead *.psgi   set filetype=perl
