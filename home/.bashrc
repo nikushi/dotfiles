@@ -25,4 +25,7 @@ if [ -d '~/.bash_completion.d' ]; then
 fi
 
 PATH=$PATH:$HOME/src/git-prune-remote-branch
+PATH=$PATH:/usr/local/mysql/bin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+MANPATH=$MANPATH:/usr/local/mysql/man
