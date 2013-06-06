@@ -7,6 +7,10 @@ alias bi='bundle install'
 alias g='git'
 alias ga='git add'
 alias gaa='git add -A'
+alias gp='git push'
+alias gpush='git push'
+alias gci='git commit -m'
+alias gdiff='git diff'
 
 alias iijping='ping 202.232.0.1'
 
