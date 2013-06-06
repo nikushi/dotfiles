@@ -3,6 +3,9 @@ alias ll='ls -FGAlh'
 alias la='ls -aG'
 alias lv='lv -Ou8'
 alias be='bundle exec'
+alias g='git'
+alias ga='git add'
+alias gaa='git add -A'
 
 alias iijping='ping 202.232.0.1'
 
