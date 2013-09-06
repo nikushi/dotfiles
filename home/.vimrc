@@ -100,6 +100,7 @@ Bundle 'slim-template/vim-slim'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-bundler'
 """" vim-scripts repos
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
