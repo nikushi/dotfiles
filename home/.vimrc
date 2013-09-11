@@ -26,6 +26,10 @@
 "   ^p                    前の候補
 "   ^]                    キャンセル
 "
+" ctrl-p
+"
+"   ^p F5                Refresh file list to show
+"
 set enc=utf-8
 set fenc=utf-8
 set fencs=utf-8,iso-2022-jp,sjis,euc-jp
