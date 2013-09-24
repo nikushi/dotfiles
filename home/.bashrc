@@ -11,6 +11,7 @@ alias gp='git push'
 alias gpush='git push'
 alias gci='git commit -m'
 alias gdiff='git diff'
+alias s='spring'
 
 alias iijping='ping 202.232.0.1'
 
