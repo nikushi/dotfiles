@@ -13,7 +13,12 @@
   ci = commit
   st = status
   df = diff
-  lg = log
+  d  = diff
+  lg = log --decorate
+  l  = log --decorate
+  lp = log -p
+  ls = ls-files
+  s  = status --branch --short
 [color]
   ui = auto
 [http]
