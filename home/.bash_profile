@@ -36,3 +36,4 @@ if [ ! -d ~/go ]; then
   mkdir $GOPATH
 fi
 export GOPATH
+export PATH=$PATH:$GOPATH/bin
