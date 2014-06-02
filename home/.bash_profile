@@ -29,3 +29,10 @@ fi
 # rbenv
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 eval "$(rbenv init -)"
+
+# GOPATH
+GOPATH=~/go
+if [ ! -d ~/go ]; then
+  mkdir $GOPATH
+fi
+export GOPATH
