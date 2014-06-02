@@ -39,3 +39,8 @@ PATH=$PATH:/usr/local/mysql/bin
 
 MANPATH=$MANPATH:/usr/local/mysql/man
 
+
+### Added by the Heroku Toolbelt
+if [ -d '/usr/local/heroku/bin' ]; then
+  export PATH="/usr/local/heroku/bin:$PATH"
+fi
