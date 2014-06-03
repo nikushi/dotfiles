@@ -32,8 +32,11 @@ eval "$(rbenv init -)"
 
 # GOPATH
 GOPATH=~/go
-if [ ! -d ~/go ]; then
+if [ ! -d $GOPATH ]; then
   mkdir $GOPATH
+  mkdir $GOPATH/bin
+  mkdir $GOPATH/pkg
+  mkdir $GOPATH/src
 fi
 export GOPATH
 export PATH=$PATH:$GOPATH/bin
