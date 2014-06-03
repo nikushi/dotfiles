@@ -105,6 +105,7 @@ Bundle 'jelera/vim-javascript-syntax'
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
+Bundle 'fatih/vim-go'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-bundler'
 """" vim-scripts repos
