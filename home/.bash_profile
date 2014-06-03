@@ -31,6 +31,9 @@ export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 eval "$(rbenv init -)"
 
 # GOPATH
+if [ -n "`which go`" ]; then
+  export GOROOT=`go env GOROOT`
+fi
 GOPATH=~/go
 if [ ! -d $GOPATH ]; then
   mkdir $GOPATH
