@@ -71,6 +71,14 @@ autocmd FileType perl set shiftwidth=4 tabstop=4 expandtab
 autocmd FileType cgi  set shiftwidth=4 tabstop=4 expandtab 
 autocmd FileType ruby set shiftwidth=2 tabstop=2 expandtab 
 
+" Settings for go
+autocmd FileType go   set shiftwidth=4 tabstop=4 noexpandtab 
+" By :make, run go build
+autocmd FileType go   set makeprg=go\ build\ 
+" When :w, do gofmt
+au BufWritePre *.go Fmt
+set rtp+=$GOROOT/misc/vim
+
 " config for vundle
 set nocompatible
 filetype off
@@ -133,4 +141,3 @@ let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_enable_underbar_completion = 1
 let g:neocomplcache_min_syntax_length = 3
-
