@@ -24,3 +24,5 @@
   ui = auto
 [http]
   sslVerify = false
+[rebase]
+	autosquash = true
