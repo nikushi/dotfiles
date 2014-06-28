@@ -66,6 +66,7 @@ autocmd BufNewFile,BufRead *.psgi   set filetype=perl
 autocmd BufNewFile,BufRead *.t      set filetype=perl
 autocmd BufNewFile,BufRead *.ru      set filetype=ruby
 autocmd BufNewFile,BufRead *.cap    set filetype=ruby
+autocmd BufNewFile,BufRead *.md     set filetype=markdown
 " ファイルタイプに応じた設定
 autocmd FileType perl set shiftwidth=4 tabstop=4 expandtab 
 autocmd FileType cgi  set shiftwidth=4 tabstop=4 expandtab 
