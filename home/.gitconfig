@@ -26,3 +26,4 @@
   sslVerify = false
 [rebase]
 	autosquash = true
+
