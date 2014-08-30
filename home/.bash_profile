@@ -34,12 +34,13 @@ eval "$(rbenv init -)"
 if [ -n "`which go`" ]; then
   export GOROOT=`go env GOROOT`
 fi
-GOPATH=~/go
-if [ ! -d $GOPATH ]; then
-  mkdir $GOPATH
-  mkdir $GOPATH/bin
-  mkdir $GOPATH/pkg
-  mkdir $GOPATH/src
-fi
+GOPATH=$HOME
+for dir in bin pkg src
+do
+  if [ ! -d $GOPATH/$dir ]; then
+    mkdir $GOPATH/$dir
+  fi
+done
 export GOPATH
 export PATH=$PATH:$GOPATH/bin
+
