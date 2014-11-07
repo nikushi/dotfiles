@@ -45,3 +45,9 @@ MANPATH=$MANPATH:/usr/local/mysql/man
 if [ -d '/usr/local/heroku/bin' ]; then
   export PATH="/usr/local/heroku/bin:$PATH"
 fi
+
+# peco + ghq
+function change-repo () {
+  cd $(ghq list -p | peco)
+}
+alias cr=change-repo
