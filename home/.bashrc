@@ -51,3 +51,8 @@ function change-repo () {
   cd $(ghq list -p | peco)
 }
 alias cr=change-repo
+
+# hub
+if [ -n "`which hub`" ]; then
+  alias git=hub
+fi
