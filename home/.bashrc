@@ -12,9 +12,6 @@ alias gpush='git push'
 alias gci='git commit -m'
 alias gdiff='git diff'
 alias s='spring'
-alias cd='pushd'
-alias po='popd'
-alias  p='popd'
 alias akacurl='curl -o /dev/null -v -H "Pragma: akamai-x-cache-on, akamai-x-cache-remote-on, akamai-x-check-cacheable, akamai-x-get-cache-key, akamai-x-get-extracted-values, akamai-x-get-nonces, akamai-x-get-ssl-client-session-id, akamai-x-get-true-cache-key, akamai-x-serial-no" '
 alias chrome="open -a '/Applications/Google Chrome.app'"
 
@@ -31,6 +28,18 @@ fi
 if [ -x "`which colordiff 2>/dev/null`" ]; then
   alias diff=colordiff
 fi
+
+function mycd {
+  if [ -n "$1" ]; then
+    pushd $1
+  else
+    pushd ~/
+  fi
+}
+alias cd=mycd
+alias po='popd'
+alias  p='popd'
+
 
 if [ -d '~/.bash_completion.d' ]; then
   for file in ~/.bash_completion.d/*bash ; do
