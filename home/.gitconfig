@@ -20,6 +20,8 @@
   lp = log -p
   ls = ls-files
   s  = status --branch --short
+  cb = rev-parse --abbrev-ref HEAD
+  current-branch = rev-parse --abbrev-ref HEAD
 [color]
   ui = auto
 [http]
