@@ -22,6 +22,7 @@
   s  = status --branch --short
   cb = rev-parse --abbrev-ref HEAD
   current-branch = rev-parse --abbrev-ref HEAD
+  pcb = !git push origin `git rev-parse --abbrev-ref HEAD`
 [color]
   ui = auto
 [http]
