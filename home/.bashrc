@@ -40,6 +40,9 @@ alias cd=mycd
 alias po='popd'
 alias  p='popd'
 
+if [ -e '/Applications/Xcode.app/Contents/Developer/usr/bin/cvs' ]; then
+  alias cvs='/Applications/Xcode.app/Contents/Developer/usr/bin/cvs'
+fi
 
 if [ -d '~/.bash_completion.d' ]; then
   for file in ~/.bash_completion.d/*bash ; do
