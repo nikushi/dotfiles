@@ -34,7 +34,10 @@ set enc=utf-8
 set fenc=utf-8
 set fencs=utf-8,iso-2022-jp,sjis,euc-jp
 
+" Enable https://github.com/altercation/vim-colors-solarized
 syntax on
+set background=dark
+colorscheme solarized
 
 filetype on
 set autoindent
