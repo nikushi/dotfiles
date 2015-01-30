@@ -8,7 +8,7 @@
 # Add words you do not want to publish to the internet as follow,
 #   $ echo "secretword" >> ~/.git_prohibited_words
 #
-git remote -v | grep -E '^origin.+@github.com:.+\(push\)$' >/dev/null
+git remote -v | grep -E '^.+\s+(git@github.com:|https?://github.com/).+\(push\)$' >/dev/null
 if [ $? -eq 0 ]; then
   if [ -e ~/.git_prohibited_words ]; then
     while read word; do
