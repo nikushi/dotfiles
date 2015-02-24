@@ -4,7 +4,8 @@ export PAGER='/usr/local/bin/lv -Ou8 -c'
 export EDITOR='/usr/bin/vim'
 export HISTSIZE=100000
 
-export PATH=$PATH:~/bin:/usr/local/sbin
+#export PATH=$PATH:~/bin:/usr/local/sbin
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # change prompt's color
 export PS1='\[\033[0;36m\]\h\[\033[1;33m\] \w \[\033[0;37m\]\$ \[\033[00m\]'
