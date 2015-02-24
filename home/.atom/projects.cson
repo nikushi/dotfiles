@@ -1,0 +1,10 @@
+'Desktop':
+  'title': 'Desktop'
+  'paths': [
+    '/Users/nikushi.nobuhiro/Desktop'
+  ]
+'home':
+  'title': 'home'
+  'paths': [
+    '/Users/nikushi.nobuhiro'
+  ]

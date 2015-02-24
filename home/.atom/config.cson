@@ -1,0 +1,37 @@
+"*":
+  editor:
+    invisibles: {}
+    fontSize: 14
+    fontFamily: "Source Code Pro"
+  core:
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+    audioBeep: false
+    disabledPackages: [
+      "atom-terminal"
+      "terminal-panel"
+      "terminal-status"
+      "terminal-runner"
+    ]
+  "exception-reporting":
+    userId: "7c252255-055f-59bc-fdc1-acef78cef049"
+  "release-notes":
+    viewedVersion: "0.92.0"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "3f70bbfe486ca2cfe2d917ddf2988a12822641df"
+  "tree-view":
+    showOnRightSide: true
+    hideIgnoredNames: true
+  "project-manager": {}
+  "autocomplete-plus":
+    navigateCompletions: "ctrl-p,ctrl-n"
+  "terminal-panel": {}
+  "terminal-status": {}
+
+".source.perl": # perl overrides
+  'editor':
+    'tabLength': 4

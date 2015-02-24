@@ -1,0 +1,7 @@
+.DS_Store
+home/.atom/.apm/
+home/.atom/.node-gyp/
+home/.atom/compile-cache/
+home/.atom/npm-debug.log
+home/.atom/packages/
+home/.atom/storage/
