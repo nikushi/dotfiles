@@ -4,4 +4,5 @@ home/.atom/.node-gyp/
 home/.atom/compile-cache/
 home/.atom/npm-debug.log
 home/.atom/packages/
+home/.atom/projects.cson
 home/.atom/storage/
