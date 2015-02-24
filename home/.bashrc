@@ -17,6 +17,9 @@ alias chrome="open -a '/Applications/Google Chrome.app'"
 
 alias iijping='ping 202.232.0.1'
 
+alias vi='atom'
+alias vim='atom'
+
 if [ -x '/usr/local/Cellar/ctags/5.8/bin/ctags' ]; then
   alias ctags='/usr/local/Cellar/ctags/5.8/bin/ctags'
 fi
