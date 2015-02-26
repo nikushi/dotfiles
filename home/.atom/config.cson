@@ -1,7 +1,6 @@
 "*":
   editor:
     invisibles: {}
-    fontSize: 14
     fontFamily: "Source Code Pro"
   core:
     themes: [
@@ -15,6 +14,9 @@
       "terminal-status"
       "terminal-runner"
     ]
+  whitespace:
+    ensureSingleTrailingNewline: false
+    removeTrailingWhitespace: false
   "exception-reporting":
     userId: "7c252255-055f-59bc-fdc1-acef78cef049"
   "release-notes":
@@ -31,7 +33,7 @@
     navigateCompletions: "ctrl-p,ctrl-n"
   "terminal-panel": {}
   "terminal-status": {}
-
-".source.perl": # perl overrides
-  'editor':
-    'tabLength': 4
+  "git-log": {}
+".perl.source":
+  editor:
+    tabLength: 4
