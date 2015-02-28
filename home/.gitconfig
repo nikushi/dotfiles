@@ -5,7 +5,7 @@
 	helper = osxkeychain
 [core]
 	excludesfile = ~/.gitignore_global
-  editor = vim
+	editor = vim
   pager = lv -c
 [alias]
   br = branch
