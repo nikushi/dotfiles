@@ -74,3 +74,6 @@ alias cr=change-repo
 if [ -n "`which hub`" ]; then
   alias git=hub
 fi
+
+# direnv
+eval "$(direnv hook bash)"
