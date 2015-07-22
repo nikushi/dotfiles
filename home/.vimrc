@@ -119,6 +119,7 @@ Bundle 'jelera/vim-javascript-syntax'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 Bundle 'scrooloose/nerdtree'
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-bundler'
 """" vim-scripts repos
 "Bundle 'L9'
