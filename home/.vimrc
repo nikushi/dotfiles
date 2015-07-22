@@ -53,7 +53,7 @@ set smartcase
 set smartindent
 
 set laststatus=2
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [%l,%c]
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [%p%%]\ [%l,%c]
 
 " Quickrun 横分割時は下へ､ 縦分割時は右へ新しいウィンドウが開くようにする
 set splitbelow
