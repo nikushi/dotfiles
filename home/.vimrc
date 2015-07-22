@@ -21,7 +21,7 @@
 " Quickrun 
 "   \ + r                 Run quickrun on the new window
 "
-" neocomplcache
+" neocomplete
 "   ^n                    次の候補
 "   ^p                    前の候補
 "   ^]                    キャンセル
@@ -101,7 +101,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Shougo/vimproc'
 Bundle 'Shougo/vimshell'
 
-Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neocomplete.vim'
 
 Bundle 'thinca/vim-ref'
 Bundle 'vim-scripts/sudo.vim'
@@ -141,14 +141,14 @@ filetype plugin indent on     " required!
 "
 "
 " -----------------------
-"  neocomplcache
+"  neocomplete
 " -----------------------
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_enable_underbar_completion = 1
-let g:neocomplcache_min_syntax_length = 3
+let g:neocomplete_enable_at_startup = 1
+let g:neocomplete_enable_smart_case = 1
+let g:neocomplete_enable_underbar_completion = 1
+let g:neocomplete_min_syntax_length = 3
 " For go
-if !exists('g:neocomplcache_omni_patterns')
-  let g:neocomplcache_omni_patterns = {}
+if !exists('g:neocomplete_omni_patterns')
+  let g:neocomplete_omni_patterns = {}
 endif
-let g:neocomplcache_omni_patterns.go = '\h\w*\.\?'
+let g:neocomplete_omni_patterns.go = '\h\w*\.\?'

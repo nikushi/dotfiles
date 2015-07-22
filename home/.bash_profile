@@ -1,7 +1,7 @@
 #LANG=ja_JP.UTF-8
 export LANG=en_US.UTF-8
 export PAGER='/usr/local/bin/lv -Ou8 -c'
-export EDITOR='/usr/bin/vim'
+export EDITOR='vim'
 export HISTSIZE=100000
 
 #export PATH=$PATH:~/bin:/usr/local/sbin
