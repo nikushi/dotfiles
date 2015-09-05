@@ -80,9 +80,6 @@ autocmd FileType ruby set shiftwidth=2 tabstop=2 expandtab
 autocmd FileType go   set shiftwidth=4 tabstop=4 noexpandtab 
 " By :make, run go build
 autocmd FileType go   set makeprg=go\ build\ 
-" When :w, do gofmt
-au BufWritePre *.go Fmt
-set rtp+=$GOROOT/misc/vim
 
 " config for vundle
 set nocompatible
@@ -97,11 +94,7 @@ Plugin 'VundleVim/Vundle.vim'
 """ My Plugins here:
 """
 """ original repos on github
-Plugin 'Shougo/vimproc'
-Plugin 'Shougo/vimshell'
-
 Plugin 'Shougo/neocomplete.vim'
-
 Plugin 'thinca/vim-ref'
 Plugin 'vim-scripts/sudo.vim'
 Plugin 'vim-ruby/vim-ruby'
@@ -120,6 +113,7 @@ Plugin 'tpope/vim-rails.git'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-bundler'
+Plugin 'fatih/vim-go'
 """" vim-scripts repos
 "Plugin 'L9'
 "Plugin 'FuzzyFinder'
@@ -149,10 +143,10 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete_enable_underbar_completion = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
-" For go
-if !exists('g:neocomplete_omni_patterns')
-  let g:neocomplete_omni_patterns = {}
+" Enable heavy omni completion.
+if !exists('g:neocomplete#sources#omni#input_patterns')
+  let g:neocomplete#sources#omni#input_patterns = {}
 endif
-let g:neocomplete_omni_patterns.go = '\h\w*\.\?'
 
-
+" Disalbe vim-go's autoinstall
+let g:go_disable_autoinstall = 1
