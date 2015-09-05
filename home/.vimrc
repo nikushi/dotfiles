@@ -88,67 +88,71 @@ set rtp+=$GOROOT/misc/vim
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
-""" My Bundles here:
+""" My Plugins here:
 """
 """ original repos on github
-Bundle 'Shougo/vimproc'
-Bundle 'Shougo/vimshell'
+Plugin 'Shougo/vimproc'
+Plugin 'Shougo/vimshell'
 
-Bundle 'Shougo/neocomplete.vim'
+Plugin 'Shougo/neocomplete.vim'
 
-Bundle 'thinca/vim-ref'
-Bundle 'vim-scripts/sudo.vim'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'taka84u9/vim-ref-ri'
-Bundle 'ujihisa/quickrun'
-Bundle 'kien/ctrlp.vim'
-Bundle 'itspriddle/vim-marked'
-Bundle 'vim-perl/vim-perl'
-Bundle 'slim-template/vim-slim'
-Bundle 'jelera/vim-javascript-syntax'
-"Bundle 'Shougo/vimfiler'
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-bundler'
+Plugin 'thinca/vim-ref'
+Plugin 'vim-scripts/sudo.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'taka84u9/vim-ref-ri'
+Plugin 'ujihisa/quickrun'
+Plugin 'kien/ctrlp.vim'
+Plugin 'itspriddle/vim-marked'
+Plugin 'vim-perl/vim-perl'
+Plugin 'slim-template/vim-slim'
+Plugin 'jelera/vim-javascript-syntax'
+"Plugin 'Shougo/vimfiler'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'Lokaltog/vim-easymotion'
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'tpope/vim-rails.git'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-bundler'
 """" vim-scripts repos
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
+"Plugin 'L9'
+"Plugin 'FuzzyFinder'
 """ non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
+"Plugin 'git://git.wincent.com/command-t.git'
 
+" All of your Plugins must be added before the following line
+call vundle#end()             " required
 filetype plugin indent on     " required!
 "
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured bundles
+" :PluginInstall(!)    - install(update) bundles
+" :PluginSearch(!) foo - search(or refresh cache first) for foo
+" :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
-" END of config for vundle
+" NOTE: comments after Plugin command are not allowed..
+" END of config for Vundle
 "
 "
 " -----------------------
 "  neocomplete
 " -----------------------
-let g:neocomplete_enable_at_startup = 1
-let g:neocomplete_enable_smart_case = 1
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
 let g:neocomplete_enable_underbar_completion = 1
-let g:neocomplete_min_syntax_length = 3
+let g:neocomplete#sources#syntax#min_keyword_length = 3
 " For go
 if !exists('g:neocomplete_omni_patterns')
   let g:neocomplete_omni_patterns = {}
 endif
 let g:neocomplete_omni_patterns.go = '\h\w*\.\?'
+
+
