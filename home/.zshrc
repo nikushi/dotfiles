@@ -1,3 +1,10 @@
+# Enable completion
+autoload -U compinit
+compinit
+
+# match Upper case or/and down case
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
 alias ls='ls -FG'
 alias ll='ls -FGAlh'
 alias la='ls -aG'
@@ -16,6 +23,8 @@ alias akacurl='curl -o /dev/null -v -H "Pragma: akamai-x-cache-on, akamai-x-cach
 alias chrome="open -a '/Applications/Google Chrome.app'"
 
 alias iijping='ping 202.232.0.1'
+# Workaround. ref: https://github.com/robbyrussell/oh-my-zsh/issues/433
+alias rake='noglob rake'
 
 if [ -x '/usr/local/Cellar/ctags/5.8/bin/ctags' ]; then
   alias ctags='/usr/local/Cellar/ctags/5.8/bin/ctags'
@@ -37,6 +46,7 @@ function mycd {
   fi
 }
 alias cd=mycd
+compdef _cd mycd
 alias po='popd'
 alias  p='popd'
 
@@ -76,3 +86,9 @@ eval "$(direnv hook bash)"
 
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# history
+export HISTFILE=$HOME/.zsh_history
+export HISTSIZE=1000
+export SAVEHIST=100000
+

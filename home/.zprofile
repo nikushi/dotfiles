@@ -6,12 +6,13 @@ export HISTSIZE=100000
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # change prompt's color
-PROMPT='%F{6}%m %# %f'
+#PROMPT='%F{6}%m %1~ %# %f'
+PROMPT='%F{6}%m %1~ %(!.#.$) %f'
 RPROMPT='[%~]'
 setopt transient_rprompt
 
-if [ -f ~/.zshprofile.local ]; then
-    source ~/.zshprofile.local
+if [ -f ~/.zprofile.local ]; then
+    source ~/.zprofile.local
 fi
 
 if [ -f ~/perl5/perlbrew/etc/bashrc ]; then
