@@ -41,6 +41,7 @@ do
 done
 export GOPATH
 export PATH=$PATH:$GOPATH/bin
+export GOBIN=$GOPATH/bin
 
 
 ### Add path to niku4i/binfiles

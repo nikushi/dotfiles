@@ -1,6 +1,10 @@
 # Enable completion
 autoload -U compinit
-compinit
+compinit -u
+# Add zsh-completions to $fpath
+if [ -d "/usr/local/share/zsh-completions" ]; then
+  fpath=(/usr/local/share/zsh-completions $fpath)
+fi
 
 # match Upper case or/and down case
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -89,6 +93,14 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # history
 export HISTFILE=$HOME/.zsh_history
-export HISTSIZE=1000
+export HISTSIZE=100000
 export SAVEHIST=100000
 
+# http://shirusu-ni-tarazu.hatenablog.jp/entry/2013/01/18/034233
+setopt nonomatch
+
+
+# Docker
+if [ -n "$(which docker-machine)" ]; then
+ eval "$(docker-machine env default)"
+fi
