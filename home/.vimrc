@@ -81,6 +81,11 @@ autocmd FileType go   set shiftwidth=4 tabstop=4 noexpandtab
 " By :make, run go build
 autocmd FileType go   set makeprg=go\ build\ 
 
+
+" Settings for str
+" Commit current editing file to str
+command StrCommit !simpletaskrecorder --commit %
+
 " config for vundle
 set nocompatible
 filetype off
