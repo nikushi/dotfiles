@@ -66,6 +66,14 @@ function md {
 alias v='vim'
 alias c='cd'
 
+function dict {
+  if [ $# -eq 0 ]; then 
+    echo "Usage: dict WORD" 1>&2
+    return 1
+  fi
+  open dict://$@
+}
+
 if [ -e '/Applications/Xcode.app/Contents/Developer/usr/bin/cvs' ]; then
   alias cvs='/Applications/Xcode.app/Contents/Developer/usr/bin/cvs'
 fi
