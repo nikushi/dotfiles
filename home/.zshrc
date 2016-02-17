@@ -79,9 +79,9 @@ if [ -e '/Applications/Xcode.app/Contents/Developer/usr/bin/cvs' ]; then
 fi
 
 PATH=$PATH:$HOME/src/git-prune-remote-branch
-PATH=$PATH:/usr/local/mysql/bin
+#PATH=$PATH:/usr/local/mysql/bin
 
-MANPATH=$MANPATH:/usr/local/mysql/man
+#MANPATH=$MANPATH:/usr/local/mysql/man
 
 # Enalbe ^p and ^n
 bindkey "^P" up-line-or-search
