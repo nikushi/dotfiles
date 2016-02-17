@@ -59,6 +59,12 @@ alias cd=mycd
 compdef _cd mycd
 alias po='popd'
 alias  p='popd'
+function md {
+  mkdir -p "$@" && cd "$1"
+}
+
+alias v='vim'
+alias c='cd'
 
 if [ -e '/Applications/Xcode.app/Contents/Developer/usr/bin/cvs' ]; then
   alias cvs='/Applications/Xcode.app/Contents/Developer/usr/bin/cvs'
