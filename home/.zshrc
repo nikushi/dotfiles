@@ -30,6 +30,8 @@ alias iijping='ping 202.232.0.1'
 # Workaround. ref: https://github.com/robbyrussell/oh-my-zsh/issues/433
 alias rake='noglob rake'
 
+alias rec-play='rec /tmp/a.wav; play /tmp/a.wav; rm /tmp/a.wav'
+
 if [ -x '/usr/local/Cellar/ctags/5.8/bin/ctags' ]; then
   alias ctags='/usr/local/Cellar/ctags/5.8/bin/ctags'
 fi
