@@ -44,6 +44,10 @@ if [ -x "`which colordiff 2>/dev/null`" ]; then
   alias diff=colordiff
 fi
 
+if [ -x "`which terminal-notifier 2>/dev/null`" ]; then
+  alias notify=terminal-notifier 
+fi
+
 function mycd {
   if [ -n "$1" ]; then
     pushd $1
