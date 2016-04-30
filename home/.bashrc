@@ -24,8 +24,9 @@ if [ -x '/usr/local/Cellar/ctags/5.8/bin/ctags' ]; then
   alias ctags='/usr/local/Cellar/ctags/5.8/bin/ctags'
 fi
 
-if [ -x '/usr/local/Cellar/gnu-sed/4.2.1/bin/gsed' ]; then
-  alias sed='/usr/local/Cellar/gnu-sed/4.2.1/bin/gsed'
+gsed=`ls /usr/local/Cellar/gnu-sed/*/bin/gsed | tail -1`
+if [ -n "$gsed" -a -x "$gsed" ]; then
+  alias sed=$gsed
 fi
 
 if [ -x "`which colordiff 2>/dev/null`" ]; then
