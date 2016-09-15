@@ -24,6 +24,9 @@
   cb = rev-parse --abbrev-ref HEAD
   current-branch = rev-parse --abbrev-ref HEAD
   pcb = !git push origin `git rev-parse --abbrev-ref HEAD`
+  pullcb = !git pull origin `git rev-parse --abbrev-ref HEAD`
+  # git openpr 05e8d1db # => open the pr page by browse
+  openpr = "!f() { hub browse -- `git log --merges --oneline --reverse --ancestry-path $1...master | grep 'Merge pull request #' | head -n 1 | cut -f5 -d' ' | sed -e 's%#%pull/%'`; }; f"
 [color]
   ui = auto
 [http]

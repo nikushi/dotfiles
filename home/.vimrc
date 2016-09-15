@@ -82,9 +82,8 @@ autocmd FileType go   set shiftwidth=4 tabstop=4 noexpandtab
 autocmd FileType go   set makeprg=go\ build\ 
 
 
-" Settings for str
-" Commit current editing file to str
-command StrCommit !simpletaskrecorder --commit %
+" Store yanked strings into clibboard
+" set clipboard+=unnamed
 
 " config for vundle
 set nocompatible
@@ -119,6 +118,18 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-bundler'
 Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-fugitive'
+
+" Markdown preview for vim
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'kannokanno/previm'
+Plugin 'tyru/open-browser.vim'
+Plugin 'rking/ag.vim'
+
+au BufRead,BufNewFile *.md set filetype=markdown
+let g:previm_open_cmd = 'open -a Safari'
+
 """" vim-scripts repos
 "Plugin 'L9'
 "Plugin 'FuzzyFinder'

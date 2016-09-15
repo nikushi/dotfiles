@@ -49,3 +49,7 @@ if [ -d "$HOME/src/github.com/niku4i/binfiles/bin" ]; then
   export PATH="$HOME/src/github.com/niku4i/binfiles/bin:$PATH"
 fi
 
+# Android NDK
+if [ -d "$HOME/Android_SDK/NDK" ]; then
+  export PATH="$HOME/Android_SDK/NDK:$PATH" 
+fi

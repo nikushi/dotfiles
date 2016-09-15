@@ -65,6 +65,7 @@ function md {
 
 alias v='vim'
 alias c='cd'
+function plantuml() { java -jar $HOME/tools/plantuml.jar $1; }
 
 function dict {
   if [ $# -eq 0 ]; then 
