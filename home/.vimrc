@@ -30,6 +30,24 @@
 "
 "   ^p F5                Refresh file list to show
 "
+" Tab
+"   vim -p file1 file2  タブで開く
+"   :help tabpage       タブのヘルプ
+"   :tabe               新しいタブを開く
+"   :tabe  FILE         新しいタブでファイルを開く
+"   :tabf[ind] FILE     ファイルを探す 
+"   :tab {cmd} "        ファイルオープン系のコマンドを指定するとタブで開く
+"   ctrl-p -> ctrl-a    ctrlpで探したファイルを新しいタブで開く
+"
+"   gt                  次のタブ
+"   gT                  前のタブ
+"   :tabfir[st]         最初のタブ
+"   :tabl[ast]]         最後のタブ
+"
+"   tabc[lose]          タブを閉じる
+"
+"   tabs                タブをリスト表示
+"
 set enc=utf-8
 set fenc=utf-8
 set fencs=utf-8,iso-2022-jp,sjis,euc-jp
@@ -123,6 +141,7 @@ Plugin 'tpope/vim-fugitive'
 " Markdown preview for vim
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+set nofoldenable
 Plugin 'kannokanno/previm'
 Plugin 'tyru/open-browser.vim'
 Plugin 'rking/ag.vim'
@@ -166,3 +185,9 @@ endif
 
 " Disalbe vim-go's autoinstall
 let g:go_disable_autoinstall = 1
+
+" ctrp-p
+" ctrl-a で new tab でファイルを開く
+let g:ctrlp_prompt_mappings = {
+  \ 'AcceptSelection("t")': ['<c-a>'],
+  \ }
