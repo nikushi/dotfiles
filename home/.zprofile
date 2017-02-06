@@ -44,9 +44,9 @@ export PATH=$PATH:$GOPATH/bin
 export GOBIN=$GOPATH/bin
 
 
-### Add path to niku4i/binfiles
-if [ -d "$HOME/src/github.com/niku4i/binfiles/bin" ]; then
-  export PATH="$HOME/src/github.com/niku4i/binfiles/bin:$PATH"
+### Add path to nikushi/binfiles
+if [ -d "$HOME/src/github.com/nikushi/binfiles/bin" ]; then
+  export PATH="$HOME/src/github.com/nikushi/binfiles/bin:$PATH"
 fi
 
 # Android NDK
