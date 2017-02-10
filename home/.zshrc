@@ -9,10 +9,14 @@ fi
 # match Upper case or/and down case
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+alias gr='grep'
+alias le='less'
+alias l='ls'
 alias ls='ls -FG'
 alias ll='ls -FGAlh'
 alias la='ls -aG'
 alias lv='lv -Ou8'
+alias b='bundle'
 alias be='bundle exec'
 alias bi='bundle install'
 alias g='git'
@@ -31,6 +35,8 @@ alias iijping='ping 202.232.0.1'
 alias rake='noglob rake'
 
 alias rec-play='rec /tmp/a.wav; play /tmp/a.wav; rm /tmp/a.wav'
+# force ag
+#alias grep='ag'
 
 if [ -x '/usr/local/Cellar/ctags/5.8/bin/ctags' ]; then
   alias ctags='/usr/local/Cellar/ctags/5.8/bin/ctags'
