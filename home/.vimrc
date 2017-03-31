@@ -131,7 +131,29 @@ Plugin 'jelera/vim-javascript-syntax'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'Lokaltog/vim-easymotion'
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+" see http://www.blog.bdauria.com/?p=431 for more details
 Plugin 'tpope/vim-rails.git'
+" :[EVST]view [name]                      open viewfile
+" :[EVST]model [name]                     open model file
+" :[EVST]controller [name]                open controller file
+" :[EVST](spec|migration|helper) [name]   same
+"
+" :A[VST]                                 open related spec file
+" gf                                      jump to resource defined file
+"
+" :Rails, :Rake [args]                    bin/rails and bin/rake comand
+" :Rgenerate [args]                       rails g
+"
+" # Use this with Tmux and the Dispatch.vim
+" :Rserver                                rails s
+" :Rserver!                               restart rails server
+" :Rserver!-                              stop rails server
+"
+"
+" visual modelで範囲指定の後
+" :Rextract <concern_name>                extract scoped code as a concern module, concern controller, or view partial
+
 Plugin 'scrooloose/nerdtree'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-bundler'
