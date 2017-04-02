@@ -177,6 +177,12 @@ Plugin 'tpope/vim-rails.git'
 " visual modelで範囲指定の後
 " :Rextract <concern_name>                extract scoped code as a concern module, concern controller, or view partial
 
+Plugin 'airblade/vim-gitgutter'
+set updatetime=250
+" You can jump between hunks with [c and ]c
+" You can preview, stage, and undo hunks with <leader>hp, <leader>hs, and
+" <leader>hu respectively.
+
 Plugin 'scrooloose/nerdtree'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-bundler'
