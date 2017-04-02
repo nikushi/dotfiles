@@ -135,7 +135,7 @@ Plugin 'jelera/vim-javascript-syntax'
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-rspec'
+Plugin 'thoughtbot/vim-rspec'
 map <Leader>rs :call RunCurrentSpecFile()<CR>
 map <Leader>rsn :call RunNearestSpec()<CR>
 map <Leader>rsl :call RunLastSpec()<CR>
