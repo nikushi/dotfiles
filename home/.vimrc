@@ -99,6 +99,8 @@ autocmd FileType go   set shiftwidth=4 tabstop=4 noexpandtab
 " By :make, run go build
 autocmd FileType go   set makeprg=go\ build\ 
 
+" <Leader> keyをspaceに設定
+let mapleader = "\<Space>"
 
 " Store yanked strings into clibboard
 " set clipboard+=unnamed
@@ -131,7 +133,50 @@ Plugin 'jelera/vim-javascript-syntax'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'Lokaltog/vim-easymotion'
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-rspec'
+map <Leader>rs :call RunCurrentSpecFile()<CR>
+map <Leader>rsn :call RunNearestSpec()<CR>
+map <Leader>rsl :call RunLastSpec()<CR>
+map <Leader>rsa :call RunAllSpecs()<CR>
+let g:rspec_command = "Dispatch bundle exec rspec {spec}"
+
+Plugin 'vim-syntastic/syntastic'
+" Recommended settings for syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" rubocop with syntastic
+let g:syntastic_mode_map = { 'mode': 'active' }
+let g:syntastic_ruby_checkers = ['rubocop']
+
+" see http://www.blog.bdauria.com/?p=431 for more details
 Plugin 'tpope/vim-rails.git'
+" :[EVST]view [name]                      open viewfile
+" :[EVST]model [name]                     open model file
+" :[EVST]controller [name]                open controller file
+" :[EVST](spec|migration|helper) [name]   same
+"
+" :A[VST]                                 open related spec file
+" gf                                      jump to resource defined file
+"
+" :Rails, :Rake [args]                    bin/rails and bin/rake comand
+" :Rgenerate [args]                       rails g
+"
+" # Use this with Tmux and the Dispatch.vim
+" :Rserver                                rails s
+" :Rserver!                               restart rails server
+" :Rserver!-                              stop rails server
+"
+"
+" visual modelで範囲指定の後
+" :Rextract <concern_name>                extract scoped code as a concern module, concern controller, or view partial
+
 Plugin 'scrooloose/nerdtree'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-bundler'
