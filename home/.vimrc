@@ -100,7 +100,10 @@ autocmd FileType go   set shiftwidth=4 tabstop=4 noexpandtab
 autocmd FileType go   set makeprg=go\ build\ 
 
 " <Leader> keyをspaceに設定
-let mapleader = "\<Space>"
+"let mapleader = "\<Space>"
+
+" <Space>は他のキーと合わせてprefixキーとして使う
+" http://deris.hatenablog.jp/entry/2013/05/02/192415
 
 " Store yanked strings into clibboard
 " set clipboard+=unnamed
@@ -135,12 +138,13 @@ Plugin 'jelera/vim-javascript-syntax'
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 Plugin 'tpope/vim-dispatch'
-Plugin 'thoughtbot/vim-rspec'
-map <Leader>rs :call RunCurrentSpecFile()<CR>
-map <Leader>rsn :call RunNearestSpec()<CR>
-map <Leader>rsl :call RunLastSpec()<CR>
-map <Leader>rsa :call RunAllSpecs()<CR>
-let g:rspec_command = "Dispatch bundle exec rspec {spec}"
+
+" <space>rc      - rspec current spec file
+" <space>ra      - rspec all
+nnoremap [RSpec] <Nop>
+nmap <Space>rs [RSpec]
+nnoremap <silent> [RSpec]c :<C-u>Dispatch bundle exec rspec %<CR>
+nnoremap <silent> [RSpec]a :<C-u>Dispatch bundle exec rspec<CR>
 
 Plugin 'vim-syntastic/syntastic'
 " Recommended settings for syntastic
