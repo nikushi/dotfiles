@@ -132,6 +132,8 @@ Plugin 'itspriddle/vim-marked'
 Plugin 'vim-perl/vim-perl'
 Plugin 'slim-template/vim-slim'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'Yggdroot/indentLine'
+
 "Plugin 'Shougo/vimfiler'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'Lokaltog/vim-easymotion'
