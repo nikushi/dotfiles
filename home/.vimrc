@@ -93,6 +93,7 @@ autocmd BufNewFile,BufRead *.gs     set filetype=javascript
 autocmd FileType perl set shiftwidth=4 tabstop=4 expandtab 
 autocmd FileType cgi  set shiftwidth=4 tabstop=4 expandtab 
 autocmd FileType ruby set shiftwidth=2 tabstop=2 expandtab 
+autocmd FileType python set shiftwidth=4 softtabstop=4 tabstop=8 expandtab
 
 " Settings for go
 autocmd FileType go   set shiftwidth=4 tabstop=4 noexpandtab 
