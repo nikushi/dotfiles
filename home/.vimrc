@@ -199,7 +199,7 @@ Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-fugitive'
 
 " Markdown preview for vim
-Plugin 'godlygeek/tabular'
+"Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 set nofoldenable
 Plugin 'kannokanno/previm'
