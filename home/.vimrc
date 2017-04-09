@@ -124,6 +124,9 @@ Plugin 'VundleVim/Vundle.vim'
 """ original repos on github
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'thinca/vim-ref'
+" :Ref ri SomeThing    open ri
+" K                    jump keyword on the cursor
+
 Plugin 'vim-scripts/sudo.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'taka84u9/vim-ref-ri'
