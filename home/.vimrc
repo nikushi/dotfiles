@@ -151,6 +151,9 @@ nmap <Space>rs [RSpec]
 nnoremap <silent> [RSpec]c :<C-u>Dispatch bundle exec rspec %<CR>
 nnoremap <silent> [RSpec]a :<C-u>Dispatch bundle exec rspec<CR>
 
+Plugin 'szw/vim-tags'
+let g:vim_tags_use_vim_dispatch = 1
+
 Plugin 'vim-syntastic/syntastic'
 " Recommended settings for syntastic
 set statusline+=%#warningmsg#
