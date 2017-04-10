@@ -93,6 +93,7 @@ autocmd BufNewFile,BufRead *.gs     set filetype=javascript
 autocmd FileType perl set shiftwidth=4 tabstop=4 expandtab 
 autocmd FileType cgi  set shiftwidth=4 tabstop=4 expandtab 
 autocmd FileType ruby set shiftwidth=2 tabstop=2 expandtab 
+autocmd FileType python set shiftwidth=4 softtabstop=4 tabstop=8 expandtab
 
 " Settings for go
 autocmd FileType go   set shiftwidth=4 tabstop=4 noexpandtab 
@@ -123,6 +124,9 @@ Plugin 'VundleVim/Vundle.vim'
 """ original repos on github
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'thinca/vim-ref'
+" :Ref ri SomeThing    open ri
+" K                    jump keyword on the cursor
+
 Plugin 'vim-scripts/sudo.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'taka84u9/vim-ref-ri'
@@ -133,7 +137,7 @@ Plugin 'vim-perl/vim-perl'
 Plugin 'slim-template/vim-slim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'Yggdroot/indentLine'
-
+Plugin 'tpope/vim-endwise'
 "Plugin 'Shougo/vimfiler'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'Lokaltog/vim-easymotion'
@@ -147,6 +151,9 @@ nnoremap [RSpec] <Nop>
 nmap <Space>rs [RSpec]
 nnoremap <silent> [RSpec]c :<C-u>Dispatch bundle exec rspec %<CR>
 nnoremap <silent> [RSpec]a :<C-u>Dispatch bundle exec rspec<CR>
+
+Plugin 'szw/vim-tags'
+let g:vim_tags_use_vim_dispatch = 1
 
 Plugin 'vim-syntastic/syntastic'
 " Recommended settings for syntastic
@@ -196,7 +203,7 @@ Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-fugitive'
 
 " Markdown preview for vim
-Plugin 'godlygeek/tabular'
+"Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 set nofoldenable
 Plugin 'kannokanno/previm'
