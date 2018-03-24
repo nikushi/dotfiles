@@ -77,7 +77,7 @@ if [ -n "`which hub`" ]; then
 fi
 
 # direnv
-eval "$(direnv hook bash)"
+#eval "$(direnv hook bash)"
 
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH

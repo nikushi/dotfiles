@@ -78,9 +78,9 @@ set splitbelow
 set splitright
 
 " ^d => $, ^a => @, ^e => =
-inoremap <C-d> $
-inoremap <C-a> @
-inoremap <C-e> =
+" inoremap <C-d> $
+" inoremap <C-a> @
+" inoremap <C-e> =
 
 " psgiなどの拡張子をファイルタイプに紐付ける
 autocmd BufNewFile,BufRead *.psgi   set filetype=perl

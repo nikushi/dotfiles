@@ -105,7 +105,7 @@ fi
 
 # peco + ghq
 function change-repo () {
-  cd $(ghq list -p | peco)
+  cd $(ghq list -p | fzf)
 }
 alias cr=change-repo
 
@@ -115,7 +115,7 @@ if [ -n "`which hub`" ]; then
 fi
 
 # direnv
-eval "$(direnv hook bash)"
+# eval "$(direnv hook bash)"
 
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
