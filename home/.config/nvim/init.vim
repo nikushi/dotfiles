@@ -57,6 +57,11 @@ command! CR call fzf#run({
   \ 'source': 'ghq list -p'
   \})
 
+
+" deoplete
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+let g:deoplete#enable_at_startup = 1
+
 call plug#end()
 "
 " End of vim-plug initialization
