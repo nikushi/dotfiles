@@ -71,7 +71,7 @@ function md {
   mkdir -p "$@" && cd "$1"
 }
 
-alias v='vim'
+alias v='nvim'
 alias c='cd'
 function plantuml() { java -jar $HOME/tools/plantuml.jar $1; }
 

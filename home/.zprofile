@@ -1,6 +1,6 @@
 export LANG=en_US.UTF-8
 export PAGER='/usr/local/bin/lv -Ou8 -c'
-export EDITOR='vim'
+export EDITOR='nvim'
 export HISTSIZE=100000
 
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
