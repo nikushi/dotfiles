@@ -53,3 +53,9 @@ fi
 if [ -d "$HOME/Android_SDK/NDK" ]; then
   export PATH="$HOME/Android_SDK/NDK:$PATH" 
 fi
+
+
+# ndenv
+export PATH="$HOME/.ndenv/bin:$PATH"
+eval "$(ndenv init -)"
+export PATH="$HOME/.ndenv/shims:$PATH"

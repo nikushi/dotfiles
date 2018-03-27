@@ -118,7 +118,7 @@ fi
 # eval "$(direnv hook bash)"
 
 # nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+# export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # history
 export HISTFILE=$HOME/.zsh_history

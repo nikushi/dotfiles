@@ -89,6 +89,9 @@ autocmd BufNewFile,BufRead *.ru      set filetype=ruby
 autocmd BufNewFile,BufRead *.cap    set filetype=ruby
 autocmd BufNewFile,BufRead *.md     set filetype=markdown
 autocmd BufNewFile,BufRead *.gs     set filetype=javascript
+autocmd BufNewFile,BufRead *.jsx    set filetype=javascript
+autocmd BufNewFile,BufRead *.jsxinc set filetype=javascript
+autocmd BufNewFile,BufRead *.vue    set filetype=javascript
 " ファイルタイプに応じた設定
 autocmd FileType perl set shiftwidth=4 tabstop=4 expandtab 
 autocmd FileType cgi  set shiftwidth=4 tabstop=4 expandtab 
@@ -101,7 +104,7 @@ autocmd FileType go   set shiftwidth=4 tabstop=4 noexpandtab
 autocmd FileType go   set makeprg=go\ build\ 
 
 " <Leader> keyをspaceに設定
-"let mapleader = "\<Space>"
+"let mapleader = ","
 
 " <Space>は他のキーと合わせてprefixキーとして使う
 " http://deris.hatenablog.jp/entry/2013/05/02/192415
@@ -135,9 +138,11 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'itspriddle/vim-marked'
 Plugin 'vim-perl/vim-perl'
 Plugin 'slim-template/vim-slim'
+Plugin 'posva/vim-vue'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-endwise'
+"Plugin 'mattn/vim-rubyfmt'
 "Plugin 'Shougo/vimfiler'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'Lokaltog/vim-easymotion'
