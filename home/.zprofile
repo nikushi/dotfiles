@@ -59,3 +59,6 @@ fi
 export PATH="$HOME/.ndenv/bin:$PATH"
 eval "$(ndenv init -)"
 export PATH="$HOME/.ndenv/shims:$PATH"
+
+# pyenv
+eval "$(pyenv init -)"
