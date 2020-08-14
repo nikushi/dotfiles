@@ -133,3 +133,11 @@ setopt nonomatch
 if [ -n "$(which docker-machine)" ]; then
  eval "$(docker-machine env default)"
 fi
+
+# mysql@5.7
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+#For compilers to find mysql@5.7 you may need to set:
+export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
+export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
+#For pkg-config to find mysql@5.7 you may need to set:
+export PKG_CONFIG_PATH="/usr/local/opt/mysql@5.7/lib/pkgconfig"

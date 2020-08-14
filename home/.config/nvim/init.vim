@@ -33,7 +33,11 @@ autocmd FileType ruby set shiftwidth=2 tabstop=2 expandtab
 " settings per file type
 autocmd FileType ruby set shiftwidth=2 tabstop=2 expandtab 
 autocmd FileType python set shiftwidth=4 softtabstop=4 tabstop=8 expandtab
+
+" settings for go
 autocmd FileType go   set shiftwidth=4 tabstop=4 noexpandtab 
+" autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow
+
 " By :make, run go build
 autocmd FileType go   set makeprg=go\ build\ 
 
