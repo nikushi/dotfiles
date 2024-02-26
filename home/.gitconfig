@@ -36,6 +36,7 @@
 
 [init]
 	templatedir = ~/.git_templates
+	defaultBranch = main
 [ghq]
   root = ~/src
 [filter "media"]
