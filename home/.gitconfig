@@ -50,3 +50,5 @@
 [user]
 	name = Nobuhiro Nikushi
 	email = deneb.ge@gmail.com
+[pull]
+	rebase = false
