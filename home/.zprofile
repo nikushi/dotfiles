@@ -1,5 +1,5 @@
 export LANG=en_US.UTF-8
-export PAGER='/usr/local/bin/lv -Ou8 -c'
+export PAGER='lv -Ou8 -c'
 export EDITOR='nvim'
 export HISTSIZE=100000
 
