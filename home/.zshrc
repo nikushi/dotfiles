@@ -130,9 +130,24 @@ setopt nonomatch
 
 
 # mysql@5.7
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
 #For compilers to find mysql@5.7 you may need to set:
-export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
-export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
+export LDFLAGS="-L/opt/homebrew/opt/mysql@5.7/lib"                                                                                   
+export CPPFLAGS="-I/opt/homebrew/opt/mysql@5.7/include"
 #For pkg-config to find mysql@5.7 you may need to set:
-export PKG_CONFIG_PATH="/usr/local/opt/mysql@5.7/lib/pkgconfig"
+export PKG_CONFIG_PATH="/ops/homebrew/opt/mysql@5.7/lib/pkgconfig"
+
+
+# python
+export PATH=$PATH:/opt/homebrew/opt/python@3.10/libexec/bin
+
+# asdf
+if [ -d "$HOME/.asdf" ]; then
+  # setup asdf
+  . "$HOME/.asdf/asdf.sh"
+
+  # append completions to fpath
+  fpath=(${ASDF_DIR}/completions $fpath)
+  # initialise completions with ZSH's compinit
+  autoload -Uz compinit && compinit
+fi
