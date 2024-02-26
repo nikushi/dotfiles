@@ -20,6 +20,9 @@ set statusline=%F%m%r%h%w\ [%Y]%=%l/%L\ [%p%%]\ %c
 set splitbelow
 set splitright
 
+set clipboard+=unnamedplus
+set mouse=
+
 " newtr
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
