@@ -52,7 +52,8 @@ Plug 'tpope/vim-endwise'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'slim-template/vim-slim'
 Plug 'fatih/vim-go', { 'for': 'go' }
-Plug '/usr/local/opt/fzf'
+Plug '/opt/homebrew/bin/fzf'
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 nnoremap <c-p> :FZF<cr>
 " with :CR, change project by incremental search
