@@ -24,10 +24,6 @@ if [ -f ~/perl5/perlbrew/etc/bashrc ]; then
     source ~/perl5/perlbrew/etc/bashrc
 fi
 
-# rbenv
-export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
-eval "$(rbenv init -)"
-
 # GOPATH
 if [ -n "`which go`" ]; then
   export GOROOT=`go env GOROOT`
@@ -53,12 +49,6 @@ fi
 if [ -d "$HOME/Android_SDK/NDK" ]; then
   export PATH="$HOME/Android_SDK/NDK:$PATH" 
 fi
-
-
-# ndenv
-export PATH="$HOME/.ndenv/bin:$PATH"
-eval "$(ndenv init -)"
-export PATH="$HOME/.ndenv/shims:$PATH"
 
 # pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
