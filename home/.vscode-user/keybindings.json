@@ -1,0 +1,22 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "cmd+p",
+        "command": "-workbench.action.quickOpen" // これでCmd+Pを無効化
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+w ctrl+w",
+        "command": "workbench.action.focusNextGroup",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    }
+]

@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Spinel",
+    "hediet.vscode-drawio.resizeImages": null,
+    "hediet.vscode-drawio.theme": "Kennedy",
+    "files.autoSave": "afterDelay",
+    "files.insertFinalNewline": true,
+    "editor.minimap.enabled": false,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editor.enablePreviewFromCodeNavigation": true
+}
