@@ -6,5 +6,16 @@
     "files.insertFinalNewline": true,
     "editor.minimap.enabled": false,
     "workbench.editor.enablePreviewFromQuickOpen": true,
-    "workbench.editor.enablePreviewFromCodeNavigation": true
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "[ruby]": {
+        
+        "editor.defaultColorDecorators": "never",
+        "editor.defaultFormatter": "Shopify.ruby-lsp",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.semanticHighlighting.enabled": true,
+        "editor.formatOnType": true,
+        "editor.wordSeparators": "`~@#$%^&*()-=+[{]}\\|;:'\",.<>/"
+    }
 }
