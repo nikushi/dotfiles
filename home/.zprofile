@@ -24,22 +24,6 @@ if [ -f ~/perl5/perlbrew/etc/bashrc ]; then
     source ~/perl5/perlbrew/etc/bashrc
 fi
 
-# GOPATH
-if [ -n "`which go`" ]; then
-  export GOROOT=`go env GOROOT`
-fi
-GOPATH=$HOME
-for dir in bin pkg src
-do
-  if [ ! -d $GOPATH/$dir ]; then
-    mkdir $GOPATH/$dir
-  fi
-done
-export GOPATH
-export PATH=$PATH:$GOPATH/bin
-export GOBIN=$GOPATH/bin
-
-
 ### Add path to nikushi/binfiles
 if [ -d "$HOME/src/github.com/nikushi/binfiles/bin" ]; then
   export PATH="$HOME/src/github.com/nikushi/binfiles/bin:$PATH"

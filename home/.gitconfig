@@ -44,11 +44,12 @@
 	smudge = git media smudge %f
 	required = true
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
 [user]
-	name = Nobuhiro Nikushi
+	name = nikushi
 	email = deneb.ge@gmail.com
 [pull]
 	rebase = false

@@ -1,10 +1,18 @@
+# asdf
+if [ -d ~/.asdf ]; then
+  export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+  # append completions to fpath
+  fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+fi
+
+# Add zsh-completions installed from brew to $fpath
+if type brew &>/dev/null; then
+  fpath=($(brew --prefix)/share/zsh-completions $fpath)
+fi
 # Enable completion
 autoload -U compinit
-compinit -u
-# Add zsh-completions to $fpath
-if [ -d "/usr/local/share/zsh-completions" ]; then
-  fpath=(/usr/local/share/zsh-completions $fpath)
-fi
+# Initialize auto completion here (must be called once here)
+compinit
 
 # match Upper case or/and down case
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -109,11 +117,6 @@ function change-repo () {
 }
 alias cr=change-repo
 
-# hub
-if [ -n "`which hub`" ]; then
-  alias git=hub
-fi
-
 # direnv
 # eval "$(direnv hook bash)"
 
@@ -141,13 +144,7 @@ export PKG_CONFIG_PATH="/ops/homebrew/opt/mysql@5.7/lib/pkgconfig"
 # python
 export PATH=$PATH:/opt/homebrew/opt/python@3.10/libexec/bin
 
-# asdf
-if [ -d "$HOME/.asdf" ]; then
-  # setup asdf
-  . "$HOME/.asdf/asdf.sh"
-
-  # append completions to fpath
-  fpath=(${ASDF_DIR}/completions $fpath)
-  # initialise completions with ZSH's compinit
-  autoload -Uz compinit && compinit
-fi
+# MySQL Client 8
+export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"
+#export LDFLAGS=-L/opt/homebrew/opt/mysql-client@8.0/lib
+#export CPPFLAGS=-I/opt/homebrew/opt/mysql-client@8.0/include
