@@ -1,0 +1,30 @@
+onboarding = false
+# herdr config  (docs: https://herdr.dev/tui/docs/config-reference/)
+# 全既定値は `herdr --default-config` で確認。編集後は prefix+shift+r か `herdr server reload-config`。
+
+[keys]
+# tmux と同じ prefix。herdr の中で tmux を起動しない前提。
+prefix = "ctrl+t"
+# tmux.conf から引き継ぎ: ^D detach / A rename-window
+detach = ["prefix+q", "prefix+ctrl+d", "prefix+d"]
+rename_tab = ["prefix+shift+t", "prefix+shift+a"]
+# tmux の | (split-window -h) = 左右分割。- (split-window -v) は herdr 既定の prefix+minus と同じ
+split_vertical = ["prefix+v", "prefix+|", "prefix+shift+backslash"]
+
+[ui]
+status_indicators = "dots"   # "symbols" にすると状態が記号表示
+
+[ui.toast]
+# agent が blocked / done になった時の通知。off | herdr | terminal | system
+delivery = "system"
+delay_seconds = 2            # この秒数同じ状態が続いたら通知（瞬間的な blocked を無視）
+
+[ui.toast.herdr]
+position = "bottom-right"
+
+[ui.sound]
+enabled = true
+
+[session]
+# server 再起動時に `claude --resume <id>` で Claude セッションを復元（integration install claude が必要）
+resume_agents_on_restore = true
