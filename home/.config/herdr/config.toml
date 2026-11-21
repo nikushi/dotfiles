@@ -25,7 +25,7 @@ active_row_bg = "black"        # base02: 一段だけ明るい選択行
 selection_bg  = "black"
 text          = "lightcyan"    # base1
 accent        = "blue"         # フォーカス枠・アクティブタブ
-surface_dim   = "darkgray"
+surface_dim   = "black"        # サイドバー境界線などの区切り線。base02 で背景にほぼ溶け込ませる
 yellow        = "yellow"
 red           = "lightred"
 peach         = "lightred"
@@ -36,6 +36,8 @@ overlay0      = "darkgray"     # 非アクティブ枠 + サイドバーの補�
 [ui]
 status_indicators = "dots"   # "symbols" にすると状態が記号表示
 hide_tab_bar_when_single_tab = true
+show_agent_labels_on_pane_borders = true   # 枠の左上に claude 等のエージェント名
+pane_scrollbars = false
 
 [ui.toast]
 # agent が blocked / done になった時の通知。off | herdr | terminal | system
