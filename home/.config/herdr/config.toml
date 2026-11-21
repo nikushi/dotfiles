@@ -53,3 +53,9 @@ enabled = true
 [session]
 # server 再起動時に `claude --resume <id>` で Claude セッションを復元（integration install claude が必要）
 resume_agents_on_restore = true
+
+[ui.sidebar.spaces]
+row_gap = 1
+
+[ui.sidebar.agents]
+row_gap = 1
