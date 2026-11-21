@@ -148,6 +148,9 @@ export PATH=$PATH:/opt/homebrew/opt/python@3.10/libexec/bin
 export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"
 #export LDFLAGS=-L/opt/homebrew/opt/mysql-client@8.0/lib
 #export CPPFLAGS=-I/opt/homebrew/opt/mysql-client@8.0/include
+if [ -d "$HOME/.local/bin" ]; then
+  export PATH="$HOME/.local/bin:$PATH"
+fi
 
 # マシン固有の設定(git 管理外)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
